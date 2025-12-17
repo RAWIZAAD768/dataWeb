@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="https://iahaqgdgqhbjvwxyxsyo.supabase.co/storage/v1/object/public/web_data/Data%20gambar/68ce4e78-6d5c-426c-b5db-d01277a1146b_20251209_162606_0000.png" type="image/png">
+  <meta name="google-site-verification" content="G5-9nuQEOCgpsHLTTTaS6KGpk4Ip-2eylTTh_S3J3zo"/>
+  <meta name="description" content="Kirim chat WhatsApp tanpa menyimpan nomor. Gratis, cepat, dan mudah digunakan langsung dari browser."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.2/css/all.css">
+  <meta property="og:title" content="WEB SERBA GUNA">
+  <meta property="og:description" content="Kirim pesan otomatis ke WhatsApp dengan mudah!">
+  <meta property="og:image" content="https://iahaqgdgqhbjvwxyxsyo.supabase.co/storage/v1/object/public/web_data/Data%20gambar/Screenshot_20251213_124724_Chrome.png">
+  <meta property="og:url" content="https://xn--serverrawizaad768-6jb.on.drv.tw/Data%20Program/Tes/">
+  <title>KIRIM CHAT WHATSAPP</title>
+  <style>
+    body, html {
+      font-family: Arial, sans-serif;
+      padding: 0; margin: 0;
+      height: 100%; width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1F1941;
+    }
+    
+   
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302C50;
+      width: 100%; height: 75px;
+    }
+    
+    
+    section {
+      color: white;
+      background-image: url('https://iahaqgdgqhbjvwxyxsyo.supabase.co/storage/v1/object/public/web_data/Data%20gambar/images%20(8).jpeg');
+      background-size: 100% 100%;
+      display: flex;
+      justify-content: center;
+      width: 100%; height: 100%;
+      padding: 10px 0;
+      overflow-y: scroll;
+    }
+    
+    section > div {
+      display: flex;
+      justify-content: center;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #7B00FF6B, #FF05D24F);
+      width: 380px; height: fit-content;
+      padding-bottom: 30px;
+    }
+    
+    .from-wa > label > div {
+      display: grid;
+      grid-auto-flow: column;
+      border: 2px solid black;
+      border-radius: 8px;
+      margin-top: 2px;
+      background: #FFFFFF33;
+      overflow: hidden;
+      transition: border 300ms;
+    }
+    
+    .from-wa > label > div:has(> input[type]:valid) {
+      border: 2px solid #00FF47;
+    }
+    
+    .from-wa > label > div:has(> input[type]:valid) > div {
+      border-right: 2px solid #00FF47;
+    }
+    
+    .from-wa > label > div > input[type]:valid {
+      background: #FFFFFF61;
+    }
+    
+    .from-wa > label > div > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-right: 2px solid black;
+      height: auto;
+      transition: border-right 300ms;
+    }
+    
+    .from-wa > label > div > div > i {
+      margin-right: 8px;
+      font-size: 1.2rem;
+    }
+    
+    .from-wa > label input[type] {
+      height: 25px;
+      color: white;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-size: 1rem;
+      padding-left: 8px;
+      transition: background 300ms;
+    }
+    
+    .from-wa > label input[type]::placeholder {
+      color: #0000008A;
+    }
+    
+    .from-wa > label textarea[rows="10"][cols="40"] {
+      padding: 7px;
+      font-weight: 600;
+    }
+    
+    .from-wa {
+      margin-bottom: 20px;
+    }
+    
+    footer {
+      padding-top: 6px;
+      text-align: center;
+      color: white;
+      background-color: #1F1941;
+      width: 100%; height: 75px;
+    }
+    
+    #to_chat_w > button[type="submit"] {
+      display: block;
+      width: 90%; height: 35px;
+      font-weight: 800;
+      margin: 0 auto;
+      background-color: #03620D;
+      box-shadow: inset 0 0 8px #00FF17;
+      transition: background-color 300ms, box-shadow 300ms;
+    }
+    
+    #to_chat_w:has(input[type="tel"]:valid):has(textarea[rows="10"][cols="40"]:valid) > button[type="submit"] {
+      background-color: #00E415;
+      box-shadow: inset 0 0 8px #03620D;
+    }
+    
+    header > div:nth-of-type(1) { flex: .8; }  /* logo */
+    
+    header > div:nth-of-type(2) {
+      flex: 3;
+      font-size: 1.8rem;
+      font-weight: 900;
+      background: linear-gradient(to right, green, red, #550CFA);
+      background-clip: text;
+      color: transparent;
+      -webkit-text-stroke: .5px black;
+    }  /* judul */
+
+    header > div:nth-of-type(3) { flex: .8; }  /* icon menu */
+    
+    header > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    
+    header > div:nth-of-type(1) > video {
+      border-radius: 12px;
+      box-shadow: 0 0 10px black, 0 0 10px black;
+      pointer-events: none;
+      background: black;
+    }
+    
+    header > div:nth-of-type(3) > i.fa-solid {
+      font-size: 2.2rem;
+      color: white;
+      transition: font-size 100ms;
+    }
+    
+    header > div:nth-of-type(3) > i.fa-solid:active  {
+      font-size: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <video width="55" preload="auto" autoplay muted loop playsinline>
+        <source type="video/mp4" src="https://iahaqgdgqhbjvwxyxsyo.supabase.co/storage/v1/object/public/web_data/Data%20gambar/Icon.mp4">
+      </video>
+    </div>
+    <div>WEB SERBA GUNA!</div>
+    <div><i class="fa-solid fa-bars"></i></div>
+  </header>
+  
+  <section>
+    <div>
+      <form id="to_chat_w" onsubmit="return false">
+        <div class="from-wa">
+          <h1 style="text-align: center">Kirim ke WhatsApp</h1>
+          <label><a>Nomor WhatsApp:</a><br>
+            <div>
+              <div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a>+62</a>
+              </div>
+              <input pattern="^08[0-9]*$" minlength="11" maxlength="13" type="tel" placeholder="Contoh: 087762394257" required>
+            </div>
+          </label>
+          <br>
+          <label><a>Teks Pesan:</a><br>
+            <div>
+              <textarea placeholder="Masukan pesan anda..." rows="10" cols="40" required></textarea>
+            </div>
+          </label>
+        </div>
+        <button type="submit">KIRIM</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <a href="https://wa.me/6287762394257?text=Saya%20mau%20kasih%20saran%20soal%20WEB%20itu:%0A-%20" style="color:cyan">Kasih saran untuk fitur tersebut</a>
+    <hr>
+    <a>Copyright 2025&copy; Developer by: <b>RAWIZAAD_768</b></a>
+  </footer>
+<script>
+   document.querySelector('#to_chat_w').addEventListener('submit', (e) => {
+     let data = [
+       e.target.querySelector('input[type="tel"]').value,
+       e.target.querySelector('textarea[rows="10"][cols="40"]').value
+     ]
+     const no_pesan = confirm(`Apakah anda ingin kirim nomor +62 ${data[0]}`);
+     if (no_pesan) {
+       window.location.href = `https://wa.me/62${data[0]}?text=${encodeURIComponent(data[1])}`;
+     }
+   });
+   
+   document.querySelector('header > div:nth-of-type(3) > i.fa-solid')
+   .addEventListener('touchend', (e) => {
+     alert("maaf fitur menu belum jadi...");
+   });
+</script>
+</body>
+</html>
